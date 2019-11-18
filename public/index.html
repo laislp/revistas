@@ -2,42 +2,62 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Loja de Revistas</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div class="flexbox-container">
+      <nav class="sidebar">
+        <ul>
+          <li><img class="user-icon" src="C:\Users\Laís\Desktop\desafio01Carol\images\Merida_v001.png" alt="Ícone de Usuário"></img></li>
+          <li><p class="username">Oi Maria</p></li>
+          <li><i class="material-icons">home</i></li>
+          <li><i class="material-icons">search</i></li>
+          <li><i class="material-icons">shopping_cart</i></li>
+          <li><i class="material-icons">logout</i></li>
+        </ul>
+      </nav>
+      <div class="user-recs">
+        <h1>Para você :)</h1>
+        <p>Escolhemos pensando em você! Dá uma olhada e diz o que achou da seleção.</p>
+        <div class="user-recs-btns">
+          <button id="modal01-btn">Festival de Inferno</button>
+          <div class="modal">
+            <div class="modal-header">
+              <span class="close-btn">&times;</span>
+              <img src="C:\Users\Laís\Desktop\desafio01Carol\images\festivaldeinferno02.png" alt="Capa da Revista">
+            </div>
+            <div class="modal-content">
+              <p>this is the text inside the modal</p>
+            </div>
+            <div class="modal-footer">
+              <h2>I am the Footer</h2>
+            </div>
+          </div>
+          <button id="modal02-btn">Vida Livre</button>
+        </div>
+      </div>
+      <div class="magazine-browser">
+        <div>
+          <input placeholder="Buscar revistas...">
+          <i class="material-icons">search</i>
+        </div>
+        <h1>Categorias</h1>
+        <div class="categories-container">
+          <ul class="nav-categories">
+            <li>Novos</li>
+            <li>Populares</li>
+            <li>Destaques</li>
+          </ul>
+        <h2>Populares</h2>
+        <div>
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
